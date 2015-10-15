@@ -42,9 +42,9 @@ function initiateServer() {
             snake.setSnakeDirection(id, dir);
         });
 
-        //        socket.on('play', function (data) {
-        //            snake.addSnake();
-        //        });
+        socket.on('clearBoard', function (data) {
+            snake.clearBoard();
+        });
     });
 }
 

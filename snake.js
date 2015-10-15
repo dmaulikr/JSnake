@@ -95,7 +95,7 @@ function tickAllSnakes() {
 }
 
 /**
- * Sets every element in the board to be 0;
+ * Sets every element in the board to be null;
  */
 function clearBoard() {
     game.board = [[]];
@@ -109,8 +109,9 @@ function clearBoard() {
         }
     }
 }
-
-
+/**
+ * Logs the board to the console. 
+ */
 function printBoard() {
     console.log("\n");
     for (i = 0; i < GAME_SIZE; i++) {
@@ -122,7 +123,9 @@ function printBoard() {
         console.log("");
     }
 }
-
+/**
+ * Spawns an apple randomly on the board. 
+ */
 function spawnApple() {
 
     while (1) {
@@ -242,7 +245,7 @@ function tickSnake(snake) {
             snake.tail.next = newSnakePart;
             snake.tail = newSnakePart;
         }
-        snake.linksLeft = snake.score * 2;
+        snake.linksLeft = 3
         game.board[newY][newX] = null;
         console.log("Links left: " + snake.linksLeft);
 
@@ -283,6 +286,7 @@ module.exports = {
     addSnake: addSnake,
     board: getBoard,
     snakes: getSnakes,
-    setSnakeDirection: setSnakeDirection
+    setSnakeDirection: setSnakeDirection,
+    clearBoard: clearBoard
 
 }
