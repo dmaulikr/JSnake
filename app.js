@@ -4,7 +4,6 @@ var logger = require('morgan');
 var http = require('http');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-//var snake = require('./snake');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
@@ -28,14 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 
-//var io = require('socket.io').listen(app);
-//
-//io.sockets.on('connection', function (socket) {
-//
-//    socket.on('setPseudo', function (data) {
-//        socket.set('pseudo', data);
-//    });
-//});
+
 
 server.initiateServer();
 
