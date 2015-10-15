@@ -5,7 +5,7 @@ Handles all functions related to the game.
 
 var game;
 
-var GAME_SIZE = 30;
+var GAME_SIZE = 15;
 var SNAKE_LENGTH = 5;
 
 
@@ -13,7 +13,6 @@ var SNAKE_LENGTH = 5;
 var Game = function () {
     this.board = null;
     this.snakes = null;
-    this.snakeCounter = 0;
     this.runFrame = null;
     this.playing = false;
 };
@@ -59,31 +58,32 @@ function initGame() {
     game.snakes = {};
     game.playing = true;
     clearBoard();
-    addSnake();
-    addSnake();
-    gameLoop();
 }
 
 function gameLoop() {
-    while (game.playing) {
-        printBoard();
-
-        tickAllSnakes();
-    }
+    tickAllSnakes();
 }
 
-function addSnake() {
-    game.snakeCounter++;
-    var snakeName = "snake" + game.snakeCounter;
+function getSnakes() {
+    return game.snakes;
+}
+
+function getBoard() {
+    return game.board;
+}
+
+function addSnake(id) {
+    var snakeName = id;
     var snake = new Snake();
     game.snakes[snakeName] = snake;
-    snake.id = game.snakeCounter.toString();
+    snake.id = id;
     //Generate an x and y coordinate to be between SNAKE_LENGTH - (GAME_SIZE - SNAKE_LENGTH)
     //This is so the snake never starts directly on any of the walls 
     var xStart = Math.floor((Math.random() * (GAME_SIZE - SNAKE_LENGTH)));
     var yStart = Math.floor((Math.random() * (GAME_SIZE - SNAKE_LENGTH)) + SNAKE_LENGTH);
     console.log("Spawning snake at " + xStart + " " + yStart);
     spawnSnake(snake, xStart, yStart, SNAKE_LENGTH);
+    spawnApple();
 }
 
 
@@ -123,12 +123,26 @@ function printBoard() {
     }
 }
 
-function spawnApple(x, y) {
-    apple = new Apple();
-    apple.x = x;
-    apple.y = y;
-    apple.id = "A";
-    game.board[y][x] = apple;
+function spawnApple() {
+
+    while (1) {
+        var xApple = Math.floor((Math.random() * GAME_SIZE));
+        var yApple = Math.floor((Math.random() * GAME_SIZE));
+
+        if (game.board[yApple][xApple] == null) {
+            apple = new Apple();
+            apple.x = xApple;
+            apple.y = yApple;
+            apple.id = 0;
+            game.board[yApple][xApple] = apple;
+            return;
+        }
+    }
+}
+
+
+function setSnakeDirection(id, direction) {
+    game.snakes[id].direction = parseInt(direction);
 }
 
 /**
@@ -213,7 +227,7 @@ function tickSnake(snake) {
         return;
     }
     //newBlock is an Apple
-    else if (newBlock.id == 'A') {
+    else if (newBlock.id == 0) {
         //Add three more links onto the snake
         var tailX = snake.tail.x;
         var tailY = snake.tail.y;
@@ -232,8 +246,9 @@ function tickSnake(snake) {
         game.board[newY][newX] = null;
         console.log("Links left: " + snake.linksLeft);
 
-        advanceSnake(snake, board, newX, newY);
+        advanceSnake(snake, newX, newY);
         console.log("Ate an apple!");
+        spawnApple();
 
     }
 }
@@ -253,15 +268,21 @@ function advanceSnake(snake, newX, newY) {
     snake.linksLeft = snake.linksLeft ? snake.linksLeft - 1 : 0;
     //Clear the last part on the map
     var lastPart = snake.parts[snake.parts.length - 1];
-    console.log("Links left: " + snake.linksLeft);
     if (!snake.linksLeft) {
         game.board[lastPart.y][lastPart.x] = null;
         //Remove the last item from parts
         snake.parts.pop();
     }
 
-
-
 }
 
-initGame();
+module.exports = {
+
+    initGame: initGame,
+    gameLoop: gameLoop,
+    addSnake: addSnake,
+    board: getBoard,
+    snakes: getSnakes,
+    setSnakeDirection: setSnakeDirection
+
+}

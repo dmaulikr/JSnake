@@ -1,0 +1,1 @@
+ const unsigned char Socket_IO_Client_SwiftVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Socket_IO_Client_Swift  PROJECT:Pods-1" "\n"; const double Socket_IO_Client_SwiftVersionNumber __attribute__ ((used)) = (double)1.;

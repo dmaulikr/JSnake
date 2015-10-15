@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/joecrozier/Google Drive/Programming/JSnake/JSnake/build/Debug-iphoneos/Pods/Socket_IO_Client_Swift.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/joecrozier/Google Drive/Programming/JSnake/JSnake/build/Pods.build/Debug-iphoneos/Pods-Socket.IO-Client-Swift.build/unextended-module.modulemap',
+    }]
+  }]
+}

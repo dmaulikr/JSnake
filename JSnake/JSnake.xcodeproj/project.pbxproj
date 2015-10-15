@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F494DD8D1BCEC19500F69D81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F494DD8C1BCEC19500F69D81 /* main.m */; };
+		F494DD901BCEC19500F69D81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F494DD8F1BCEC19500F69D81 /* AppDelegate.m */; };
+		F494DD931BCEC19500F69D81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F494DD921BCEC19500F69D81 /* ViewController.m */; };
+		F494DD961BCEC19500F69D81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F494DD941BCEC19500F69D81 /* Main.storyboard */; };
+		F494DD981BCEC19500F69D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F494DD971BCEC19500F69D81 /* Assets.xcassets */; };
+		F494DD9B1BCEC19500F69D81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F494DD991BCEC19500F69D81 /* LaunchScreen.storyboard */; };
+		F494DDE31BCEC4D500F69D81 /* SocketAckEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDD31BCEC4D400F69D81 /* SocketAckEmitter.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDE41BCEC4D500F69D81 /* SocketAckManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDD41BCEC4D500F69D81 /* SocketAckManager.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDE51BCEC4D500F69D81 /* SocketAnyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDD51BCEC4D500F69D81 /* SocketAnyEvent.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDE61BCEC4D500F69D81 /* SocketEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDD61BCEC4D500F69D81 /* SocketEngine.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDE71BCEC4D500F69D81 /* SocketEngineClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDD71BCEC4D500F69D81 /* SocketEngineClient.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDE81BCEC4D500F69D81 /* SocketEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDD81BCEC4D500F69D81 /* SocketEventHandler.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDE91BCEC4D500F69D81 /* SocketFixUTF8.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDD91BCEC4D500F69D81 /* SocketFixUTF8.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDEA1BCEC4D500F69D81 /* SocketIOClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDDA1BCEC4D500F69D81 /* SocketIOClient.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDEB1BCEC4D500F69D81 /* SocketIOClientStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDDB1BCEC4D500F69D81 /* SocketIOClientStatus.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDEC1BCEC4D500F69D81 /* SocketLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDDC1BCEC4D500F69D81 /* SocketLogger.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDED1BCEC4D500F69D81 /* SocketPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDDD1BCEC4D500F69D81 /* SocketPacket.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDEE1BCEC4D500F69D81 /* SocketParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDDE1BCEC4D500F69D81 /* SocketParser.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDEF1BCEC4D500F69D81 /* SocketStringReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDDF1BCEC4D500F69D81 /* SocketStringReader.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDF01BCEC4D500F69D81 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDE01BCEC4D500F69D81 /* SocketTypes.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDF11BCEC4D500F69D81 /* SwiftRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDE11BCEC4D500F69D81 /* SwiftRegex.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDF21BCEC4D500F69D81 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494DDE21BCEC4D500F69D81 /* WebSocket.swift */; settings = {ASSET_TAGS = (); }; };
+		F494DDF61BCFD81B00F69D81 /* JSnakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F494DDF51BCFD81B00F69D81 /* JSnakeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		F494DDF91BCFE67500F69D81 /* JSnakeConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = F494DDF81BCFE67500F69D81 /* JSnakeConnect.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F494DD881BCEC19500F69D81 /* JSnake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSnake.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F494DD8C1BCEC19500F69D81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F494DD8E1BCEC19500F69D81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F494DD8F1BCEC19500F69D81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F494DD911BCEC19500F69D81 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F494DD921BCEC19500F69D81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F494DD951BCEC19500F69D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F494DD971BCEC19500F69D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F494DD9A1BCEC19500F69D81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F494DD9C1BCEC19500F69D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F494DDD21BCEC4D400F69D81 /* JSnake-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSnake-Bridging-Header.h"; sourceTree = "<group>"; };
+		F494DDD31BCEC4D400F69D81 /* SocketAckEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAckEmitter.swift; path = JSnake/SocketIOClientSwift/SocketAckEmitter.swift; sourceTree = "<group>"; };
+		F494DDD41BCEC4D500F69D81 /* SocketAckManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAckManager.swift; path = JSnake/SocketIOClientSwift/SocketAckManager.swift; sourceTree = "<group>"; };
+		F494DDD51BCEC4D500F69D81 /* SocketAnyEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketAnyEvent.swift; path = JSnake/SocketIOClientSwift/SocketAnyEvent.swift; sourceTree = "<group>"; };
+		F494DDD61BCEC4D500F69D81 /* SocketEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngine.swift; path = JSnake/SocketIOClientSwift/SocketEngine.swift; sourceTree = "<group>"; };
+		F494DDD71BCEC4D500F69D81 /* SocketEngineClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEngineClient.swift; path = JSnake/SocketIOClientSwift/SocketEngineClient.swift; sourceTree = "<group>"; };
+		F494DDD81BCEC4D500F69D81 /* SocketEventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketEventHandler.swift; path = JSnake/SocketIOClientSwift/SocketEventHandler.swift; sourceTree = "<group>"; };
+		F494DDD91BCEC4D500F69D81 /* SocketFixUTF8.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketFixUTF8.swift; path = JSnake/SocketIOClientSwift/SocketFixUTF8.swift; sourceTree = "<group>"; };
+		F494DDDA1BCEC4D500F69D81 /* SocketIOClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClient.swift; path = JSnake/SocketIOClientSwift/SocketIOClient.swift; sourceTree = "<group>"; };
+		F494DDDB1BCEC4D500F69D81 /* SocketIOClientStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketIOClientStatus.swift; path = JSnake/SocketIOClientSwift/SocketIOClientStatus.swift; sourceTree = "<group>"; };
+		F494DDDC1BCEC4D500F69D81 /* SocketLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketLogger.swift; path = JSnake/SocketIOClientSwift/SocketLogger.swift; sourceTree = "<group>"; };
+		F494DDDD1BCEC4D500F69D81 /* SocketPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketPacket.swift; path = JSnake/SocketIOClientSwift/SocketPacket.swift; sourceTree = "<group>"; };
+		F494DDDE1BCEC4D500F69D81 /* SocketParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketParser.swift; path = JSnake/SocketIOClientSwift/SocketParser.swift; sourceTree = "<group>"; };
+		F494DDDF1BCEC4D500F69D81 /* SocketStringReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketStringReader.swift; path = JSnake/SocketIOClientSwift/SocketStringReader.swift; sourceTree = "<group>"; };
+		F494DDE01BCEC4D500F69D81 /* SocketTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SocketTypes.swift; path = JSnake/SocketIOClientSwift/SocketTypes.swift; sourceTree = "<group>"; };
+		F494DDE11BCEC4D500F69D81 /* SwiftRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftRegex.swift; path = JSnake/SocketIOClientSwift/SwiftRegex.swift; sourceTree = "<group>"; };
+		F494DDE21BCEC4D500F69D81 /* WebSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = JSnake/SocketIOClientSwift/WebSocket.swift; sourceTree = "<group>"; };
+		F494DDF41BCFD81B00F69D81 /* JSnakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSnakeViewController.h; sourceTree = "<group>"; };
+		F494DDF51BCFD81B00F69D81 /* JSnakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSnakeViewController.m; sourceTree = "<group>"; };
+		F494DDF71BCFE67500F69D81 /* JSnakeConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSnakeConnect.h; sourceTree = "<group>"; };
+		F494DDF81BCFE67500F69D81 /* JSnakeConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSnakeConnect.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F494DD851BCEC19500F69D81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F494DD7F1BCEC19500F69D81 = {
+			isa = PBXGroup;
+			children = (
+				F494DDF31BCEC4DC00F69D81 /* Socket.io */,
+				F494DD8A1BCEC19500F69D81 /* JSnake */,
+				F494DD891BCEC19500F69D81 /* Products */,
+				F494DDD21BCEC4D400F69D81 /* JSnake-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		F494DD891BCEC19500F69D81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F494DD881BCEC19500F69D81 /* JSnake.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F494DD8A1BCEC19500F69D81 /* JSnake */ = {
+			isa = PBXGroup;
+			children = (
+				F494DD8E1BCEC19500F69D81 /* AppDelegate.h */,
+				F494DD8F1BCEC19500F69D81 /* AppDelegate.m */,
+				F494DD911BCEC19500F69D81 /* ViewController.h */,
+				F494DD921BCEC19500F69D81 /* ViewController.m */,
+				F494DD941BCEC19500F69D81 /* Main.storyboard */,
+				F494DDF41BCFD81B00F69D81 /* JSnakeViewController.h */,
+				F494DDF51BCFD81B00F69D81 /* JSnakeViewController.m */,
+				F494DDF71BCFE67500F69D81 /* JSnakeConnect.h */,
+				F494DDF81BCFE67500F69D81 /* JSnakeConnect.m */,
+				F494DD971BCEC19500F69D81 /* Assets.xcassets */,
+				F494DD991BCEC19500F69D81 /* LaunchScreen.storyboard */,
+				F494DD9C1BCEC19500F69D81 /* Info.plist */,
+				F494DD8B1BCEC19500F69D81 /* Supporting Files */,
+			);
+			path = JSnake;
+			sourceTree = "<group>";
+		};
+		F494DD8B1BCEC19500F69D81 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F494DD8C1BCEC19500F69D81 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F494DDF31BCEC4DC00F69D81 /* Socket.io */ = {
+			isa = PBXGroup;
+			children = (
+				F494DDD31BCEC4D400F69D81 /* SocketAckEmitter.swift */,
+				F494DDD41BCEC4D500F69D81 /* SocketAckManager.swift */,
+				F494DDD51BCEC4D500F69D81 /* SocketAnyEvent.swift */,
+				F494DDD61BCEC4D500F69D81 /* SocketEngine.swift */,
+				F494DDD71BCEC4D500F69D81 /* SocketEngineClient.swift */,
+				F494DDD81BCEC4D500F69D81 /* SocketEventHandler.swift */,
+				F494DDD91BCEC4D500F69D81 /* SocketFixUTF8.swift */,
+				F494DDDA1BCEC4D500F69D81 /* SocketIOClient.swift */,
+				F494DDDB1BCEC4D500F69D81 /* SocketIOClientStatus.swift */,
+				F494DDDC1BCEC4D500F69D81 /* SocketLogger.swift */,
+				F494DDDD1BCEC4D500F69D81 /* SocketPacket.swift */,
+				F494DDDE1BCEC4D500F69D81 /* SocketParser.swift */,
+				F494DDDF1BCEC4D500F69D81 /* SocketStringReader.swift */,
+				F494DDE01BCEC4D500F69D81 /* SocketTypes.swift */,
+				F494DDE11BCEC4D500F69D81 /* SwiftRegex.swift */,
+				F494DDE21BCEC4D500F69D81 /* WebSocket.swift */,
+			);
+			name = Socket.io;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F494DD871BCEC19500F69D81 /* JSnake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F494DD9F1BCEC19500F69D81 /* Build configuration list for PBXNativeTarget "JSnake" */;
+			buildPhases = (
+				F494DD841BCEC19500F69D81 /* Sources */,
+				F494DD851BCEC19500F69D81 /* Frameworks */,
+				F494DD861BCEC19500F69D81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSnake;
+			productName = JSnake;
+			productReference = F494DD881BCEC19500F69D81 /* JSnake.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F494DD801BCEC19500F69D81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Joe Crozier";
+				TargetAttributes = {
+					F494DD871BCEC19500F69D81 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 7VUCELU5PL;
+					};
+				};
+			};
+			buildConfigurationList = F494DD831BCEC19500F69D81 /* Build configuration list for PBXProject "JSnake" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F494DD7F1BCEC19500F69D81;
+			productRefGroup = F494DD891BCEC19500F69D81 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F494DD871BCEC19500F69D81 /* JSnake */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F494DD861BCEC19500F69D81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F494DD9B1BCEC19500F69D81 /* LaunchScreen.storyboard in Resources */,
+				F494DD981BCEC19500F69D81 /* Assets.xcassets in Resources */,
+				F494DD961BCEC19500F69D81 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F494DD841BCEC19500F69D81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F494DD931BCEC19500F69D81 /* ViewController.m in Sources */,
+				F494DDEB1BCEC4D500F69D81 /* SocketIOClientStatus.swift in Sources */,
+				F494DDE91BCEC4D500F69D81 /* SocketFixUTF8.swift in Sources */,
+				F494DDE71BCEC4D500F69D81 /* SocketEngineClient.swift in Sources */,
+				F494DDF61BCFD81B00F69D81 /* JSnakeViewController.m in Sources */,
+				F494DDE41BCEC4D500F69D81 /* SocketAckManager.swift in Sources */,
+				F494DDE81BCEC4D500F69D81 /* SocketEventHandler.swift in Sources */,
+				F494DDEF1BCEC4D500F69D81 /* SocketStringReader.swift in Sources */,
+				F494DDF01BCEC4D500F69D81 /* SocketTypes.swift in Sources */,
+				F494DDEC1BCEC4D500F69D81 /* SocketLogger.swift in Sources */,
+				F494DDEA1BCEC4D500F69D81 /* SocketIOClient.swift in Sources */,
+				F494DDE51BCEC4D500F69D81 /* SocketAnyEvent.swift in Sources */,
+				F494DDF11BCEC4D500F69D81 /* SwiftRegex.swift in Sources */,
+				F494DDF91BCFE67500F69D81 /* JSnakeConnect.m in Sources */,
+				F494DDE61BCEC4D500F69D81 /* SocketEngine.swift in Sources */,
+				F494DDF21BCEC4D500F69D81 /* WebSocket.swift in Sources */,
+				F494DDED1BCEC4D500F69D81 /* SocketPacket.swift in Sources */,
+				F494DDEE1BCEC4D500F69D81 /* SocketParser.swift in Sources */,
+				F494DD901BCEC19500F69D81 /* AppDelegate.m in Sources */,
+				F494DD8D1BCEC19500F69D81 /* main.m in Sources */,
+				F494DDE31BCEC4D500F69D81 /* SocketAckEmitter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F494DD941BCEC19500F69D81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F494DD951BCEC19500F69D81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F494DD991BCEC19500F69D81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F494DD9A1BCEC19500F69D81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F494DD9D1BCEC19500F69D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F494DD9E1BCEC19500F69D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F494DDA01BCEC19500F69D81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JSnake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JC.JSnake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSnake-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F494DDA11BCEC19500F69D81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JSnake/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JC.JSnake;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JSnake-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F494DD831BCEC19500F69D81 /* Build configuration list for PBXProject "JSnake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F494DD9D1BCEC19500F69D81 /* Debug */,
+				F494DD9E1BCEC19500F69D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F494DD9F1BCEC19500F69D81 /* Build configuration list for PBXNativeTarget "JSnake" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F494DDA01BCEC19500F69D81 /* Debug */,
+				F494DDA11BCEC19500F69D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F494DD801BCEC19500F69D81 /* Project object */;
+}
